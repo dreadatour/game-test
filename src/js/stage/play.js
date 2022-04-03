@@ -1,24 +1,15 @@
-import { Stage, level, game, ColorLayer, BitmapText  } from 'melonjs/dist/melonjs.module.js';
+import * as me from 'melonjs/dist/melonjs.module.js';
 
-class PlayScreen extends Stage {
+class PlayScreen extends me.Stage {
     /**
      *  action to perform on state change
      */
     onResetEvent() {
-        // // add a gray background to the default Stage
-        // game.world.addChild(new ColorLayer("background", "#202020"));
+      // load a level
+      me.level.load("area01");
 
-        // // add a font text display object
-        // game.world.addChild(new BitmapText(game.viewport.width / 2, game.viewport.height / 2,  {
-        //     font : "PressStart2P",
-        //     size : 4.0,
-        //     textBaseline : "middle",
-        //     textAlign : "center",
-        //     text : "Hello World !"
-        // }));
-
-		// load a level
-		level.load("area01");
+      // start the game
+      me.state.change(me.state.PLAY);
     }
 };
 

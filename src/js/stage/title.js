@@ -1,19 +1,17 @@
-import { Stage } from 'melonjs/dist/melonjs.module.js';
+import {Stage} from 'melonjs/dist/melonjs.module.js';
 
-class TitleScreen extends Stage {
+export class TitleScreen extends Stage {
     /**
      *  action to perform on state change
      */
     onResetEvent() {
-        ; // TODO
+        // TODO
     }
 
     /**
-     *  action to perform when leaving this screen (state change)
-     */
+    *  action to perform when leaving this screen (state change)
+    */
     onDestroyEvent() {
-        ; // TODO
+        // TODO
     }
-};
-
-export default TitleScreen;
+}

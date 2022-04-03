@@ -1,15 +1,17 @@
-// a melonJS data manifest
-const DataManifest = [
+export const DataManifest = [
     {
-        name: "gass_tiles",  
-        type:"image",	
-        src: "data/img/map/gass_tiles.png"
+        name: "grass_tiles",
+        type:"image",
+        src: "data/img/map/grass_tiles.png"
     },
     {
-        name: "labyrinth",              
-        type: "tmx",	
+        name: "character",
+        type:"image",
+        src: "data/img/sprite/character.png"
+    },
+    {
+        name: "labyrinth",
+        type: "tmx",
         src: "data/map/labyrinth.tmx"
     }
 ];
-
-export default DataManifest;

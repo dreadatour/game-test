@@ -6,7 +6,7 @@ class PlayScreen extends me.Stage {
      */
     onResetEvent() {
       // load a level
-      me.level.load("area01");
+      me.level.load("labyrinth");
 
       // start the game
       me.state.change(me.state.PLAY);
